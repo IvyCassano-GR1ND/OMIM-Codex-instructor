@@ -1,0 +1,4 @@
+interface:
+  display_name: "OMIM 浏览器研究助手"
+  short_description: "由 Codex 操作浏览器读取临床概要，整理眼部表现和致病基因，支持断点继续并导出 Excel"
+  default_prompt: "使用 $omim-browser-research 读取我指定的 OMIM 检索结果，提取眼部及其他系统表现、致病基因和中文病名，保存进度并导出 Excel。"

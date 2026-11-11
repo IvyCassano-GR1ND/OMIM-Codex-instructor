@@ -1,0 +1,37 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "omim-browser-research",
+  "version": "1.0.0",
+  "description": "Operate the user's browser to collect OMIM Clinical Synopsis search results, extract ocular and systemic features and molecular basis, translate disease names, resume interrupted work, and export an Excel workbook.",
+  "author": {
+    "name": "Ivy Cassano"
+  },
+  "keywords": [
+    "omim",
+    "clinical-synopsis",
+    "genetics",
+    "ophthalmology",
+    "research",
+    "excel"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "OMIM 浏览器研究助手",
+        "shortDescription": "采集并整理 OMIM Clinical Synopsis，支持断点继续和 Excel 导出",
+        "longDescription": "使用用户已登录的浏览器读取 OMIM Clinical Synopsis 搜索结果，提取眼部表现、其他系统表现、分子基础和致病基因，翻译疾病名称，保存采集进度，并生成带原文证据的 Excel 工作簿。",
+        "developerName": "Ivy Cassano",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "defaultPrompt": [
+          "使用 OMIM 浏览器研究助手，从我当前打开的 OMIM Clinical Synopsis 搜索页面开始采集，先验证 3 条结果。",
+          "继续上次的 OMIM 采集进度，并将已完成记录导出为 Excel。"
+        ],
+        "brandColor": "#1F4E78"
+      }
+    }
+  }
+}
